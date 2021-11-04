@@ -15,6 +15,7 @@ body {
 }
 .cart-item-actions {
   margin-top: 20px;
+  background-color: red;
 }
 .action-icons {
   height: 25px;
