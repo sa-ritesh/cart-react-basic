@@ -1,11 +1,10 @@
 import React from "react";
-import CartItem from "./CartItem";
+import Cart from "./Cart";
 
 function App() {
   return (
     <React.Fragment>
-      <h1>Cart</h1>
-      <CartItem />
+      <Cart />
     </React.Fragment>
   );
 }
