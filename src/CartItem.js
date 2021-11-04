@@ -2,10 +2,12 @@ import React from "react";
 
 class CartItem extends React.Component {
   render() {
+    console.log(this.props);
     const { product } = this.props;
     const { price, title, qty } = product;
     const { increase } = this.props;
     const { decrease } = this.props;
+    const { deletee } = this.props;
 
     return (
       <div className="cart-item">
@@ -34,6 +36,7 @@ class CartItem extends React.Component {
               alt="delete"
               className="action-icons"
               src="https://image.flaticon.com/icons/svg/1214/1214428.svg"
+              onClick={() => deletee(product.id)}
             />
           </div>
         </div>
